@@ -19,6 +19,7 @@ interface IHttp {
 
 export interface IConfig {
   nodeEnv: string;
+  fixedToken: string;
   db: IDB;
   http: IHttp;
 }

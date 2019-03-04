@@ -2,6 +2,7 @@ import { IConfig } from './config.interface';
 
 export const ConfigEnv: IConfig = {
   nodeEnv: 'dev',
+  fixedToken: 'token',
   db: {
     mongo: {
       mongoConnectionUri: 'mongodb://localhost',
@@ -12,7 +13,7 @@ export const ConfigEnv: IConfig = {
   },
   http: {
     domain: 'localhost',
-    port: 8007,
+    port: 5555,
     rootUrl() {
       return `http://${this.domain}:${this.port}`;
     }

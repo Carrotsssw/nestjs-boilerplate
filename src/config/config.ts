@@ -2,7 +2,7 @@ import { IConfig } from './env/config.interface';
 
 const _Env = process.env.NODE_ENV || 'dev';
 
-let _AppConfigEnv: IConfig
+let _AppConfigEnv: IConfig;
 
 try {
   _AppConfigEnv = require(`./env/config.${_Env}`).ConfigEnv;
